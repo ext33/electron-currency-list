@@ -1,7 +1,20 @@
 .header
-    justify-content: center
-    align-items: center
+    width: 100%
+    border-bottom: 1px solid var(--border)
 
-    > img
-        height: 140px
-        width: 140px
+    &__container
+        justify-content: space-between
+        align-items: center
+        padding: 20px 30px
+        margin: 0px 0
+
+        svg
+            fill: var(--text-color)
+
+    &__theme-icon
+        cursor: pointer
+
+        > svg
+            height: 30px
+            width: 30px
+    

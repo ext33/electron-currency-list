@@ -10,7 +10,7 @@ function Container(props) {
 
             { props.isToogle ? <CurrencyList data={props.data} /> : null }
 
-            <div className="flex container__button" onClick={props.toggle}>
+            <div className={props.isToogle ? "flex container__button container__button_toggle" : "flex container__button"} onClick={props.toggle}>
                 { props.isToogle ? 'hide' : 'show currency' }
             </div>
             

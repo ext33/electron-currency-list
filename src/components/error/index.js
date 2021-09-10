@@ -1,12 +1,11 @@
 import React from 'react'
-import './loading.sass'
 
-function Loading() {
+function Error() {
     return (
         <div className="flex loading animate animate__fadeIn">
-            <p>Loading . . .</p>
+            <p>Error. Press Ctrl + R or CMD + R to reload.</p>
         </div>
     )
 }
 
-export default Loading
+export default Error

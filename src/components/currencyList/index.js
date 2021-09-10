@@ -4,8 +4,6 @@ import Item from './item'
 
 function CurrencyList(props) {
 
-    console.log(props.data)
-
     return (
         <div className="flex currencyList animate animate__fadeIn">
             <div className="flex currencyList__head">
@@ -13,9 +11,9 @@ function CurrencyList(props) {
                 <p>Currency / EUR</p>
             </div>
             {
-                props.data.map(item => {
+                props.data.map((item, index) => {
                     return (
-                        <Item index={item.index} flag={item.flagCode} name={item.name} rate={item.rate} />
+                        <Item key={index} flag={item.flagCode} name={item.name} rate={item.rate} />
                     )
                 })
             }
