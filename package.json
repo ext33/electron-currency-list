@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
+  "homepage":"./",
   "author": {
     "name": "ext33",
     "email": "ext33ws@gmail.com",
@@ -41,11 +42,11 @@
       "category": "public.app-category.utilities"
     },
     "files": [
-      "build/**/*",
-      "node_modules/**/*"
+      "build/",
+      "node_modules/"
     ],
     "directories": {
-      "buildResources": "build"
+      "buildResources": "build/"
     }
   },
   "eslintConfig": {
