@@ -3,6 +3,15 @@ import axios from 'axios'
 const token = '899aa395cd94757b7d777e0366330b5b'
 
 export async function fetchAllData() {
+    // ```
+    // Function for fetching currency and counties data
+    // Params: none
+    // Return: {
+    //     success: *boolean*,
+    //     currencyValues: *object*,
+    //     countryData: *object*,
+    // }
+    // ```
 
     let data = {
         success: true,

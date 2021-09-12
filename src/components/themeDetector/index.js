@@ -1,6 +1,10 @@
 import {useState, useEffect} from 'react'
 
 function useDetectTheme() {
+
+    // Custom hook for get system theme
+    // Params: none
+
     let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
     const [isDarkTheme, setIsDarkTheme] = useState({
         isDark: theme

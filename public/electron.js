@@ -3,6 +3,7 @@ const path = require('path');
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 
+// set window settings
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
@@ -14,6 +15,7 @@ function createWindow() {
     },
   });
 
+// configure dev mode
   win.loadURL(
     isDev
       ? 'http://localhost:3000'
@@ -25,8 +27,10 @@ function createWindow() {
   }
 }
 
+// start app
 app.whenReady().then(createWindow);
 
+// settings for mac os
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();

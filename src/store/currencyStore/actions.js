@@ -1,6 +1,10 @@
 import { fetchAllData } from '../api'
 
 export function fetchData(){
+
+    // Function for serialize and write currency data in store
+    // Params: none
+
     return async (dispatch) => {
 
         let data = await fetchAllData()
