@@ -6,16 +6,19 @@ This project was bootstrapped with:
 - Sass
 - Electron
 
-### Available scripts for Electron app
+# Available scripts for Electron app
 
 In the project directory, you can run:
 
- - start app in dev mode: 
+ start app in dev mode: 
+
  `yarn start` 
- - build app for currenct platform
+
+ build app for currenct platform:
+
  `yarn build`
 
-### Project structure
+# Project structure
 
 
 | Folder               |  Description                        |
