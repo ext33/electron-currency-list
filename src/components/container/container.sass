@@ -4,13 +4,22 @@
     flex-direction: column
     margin: 30px 0
 
+    &__list-arrow
+        border: solid var(--border)
+        border-width: 0 1.5px 1.5px 0
+        display: inline-block
+        padding: 4px
+        margin-bottom: -2px
+        transform: rotate(-135deg)
+        margin-top: 40px
+
+    &__list-hr
+        width: 100%
+        border-bottom: 1px solid var(--border)
+
     &__button
         padding: 10px 25px
         border-radius: 10px
         background-color: var(--accent)
         font-size: 24px
         cursor: pointer
-        margin-top: 20%
-
-        &_toggle
-            margin-top: 0

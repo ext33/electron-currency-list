@@ -8,11 +8,19 @@ function Container(props) {
     return (
         <div className="flex container animate animate__fadeIn">
 
-            { props.isToogle ? <CurrencyList data={props.data} /> : null }
-
-            <div className={props.isToogle ? "flex container__button container__button_toggle" : "flex container__button"} onClick={props.toggle}>
-                { props.isToogle ? 'hide' : 'show currency' }
+            <div className="flex container__button" onClick={props.toggle}>
+                currency list
             </div>
+
+            { 
+                props.isToogle ? 
+                <> 
+                    <div className="container__list-arrow animate animate__fadeIn" />
+                    <div className="container__list-hr animate animate__fadeIn" /> 
+                    <CurrencyList data={props.data} /> 
+                </>
+                : null 
+            }
             
         </div>
     )
